@@ -2,7 +2,6 @@ from flask import Flask
 import discord
 from discord.ext import tasks
 from dhooks import Webhook
-import os
 import nextcord
 from nextcord.ext import commands
 import asyncio
