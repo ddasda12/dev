@@ -1,5 +1,8 @@
 from flask import Flask, render_template
 from threading import Thread
+from dhooks import Webhook
+
+hook=Webhook('https://discord.com/api/webhooks/1194012870078378054/eevDHgzT9OGSehwGUDyYzXhZZtZhkYB4_w_rx4lg_AVFyMbAQOudZEgtxAdQhVGXKgfx')
 app = Flask(__name__)
 
 
@@ -11,7 +14,7 @@ def hello():
 @app.route('/test')
 def test():
     return 'Test'
-
+    hook.send('hello')
 @app.route('/result')
 def result():
    dict = {'phy':50,'che':60,'maths':70}
