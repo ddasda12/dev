@@ -1,2 +1,7 @@
 Flask
 dhooks
+nextcord
+requests
+os
+discord
+asyncio
