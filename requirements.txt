@@ -1,6 +1,2 @@
 Flask
 dhooks
-nextcord
-requests
-discord
-asyncio
