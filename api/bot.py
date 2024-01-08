@@ -7,3 +7,4 @@ hook=Webhook('https://discord.com/api/webhooks/1194012870078378054/eevDHgzT9OGSe
 while True:
     hook.send('hello')
     time.sleep(10)
+    keep_alive()
