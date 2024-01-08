@@ -16,3 +16,12 @@ def test():
 def result():
    dict = {'phy':50,'che':60,'maths':70}
    return render_template('result.html', result = dict)
+
+def keep_alive():
+  t1 = Thread(target=run)
+  t1.start()
+  
+
+
+if __name__ == '__main__':
+  keep_alive()
