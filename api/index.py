@@ -14,20 +14,12 @@ def hello():
     hook.send('hello')
     return 'Hello, world'
 
-def send_message():
-    hook.send('Message sent every 5 minutes')
+
 
 def run():
     app.run(host='0.0.0.0', port=8080)
 
 if __name__ == '__main__':
-    # Schedule the send_message function to be called every 5 minutes
-    schedule.every(5).minutes.do(send_message)
-
-    # Run the Flask app
+    
     run()
 
-    # Keep the program running to execute scheduled tasks
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
